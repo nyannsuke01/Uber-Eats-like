@@ -6,18 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-3.times do |n|
+4.times do |n|
     restaurant = Restaurant.new(
-      name: "testレストラン_#{n}",
+      name: "近場のレストラン#{n}",
       fee: 100,
       time_required: 10,
     )
   
     12.times do |m|
       restaurant.foods.build(
-        name: "フード名_#{m}",
+        name: "商品名#{m}",
         price: 500,
-        description: "フード_#{m}の説明文です。"
+        description: "#{m}の説明文"
       )
     end
   
